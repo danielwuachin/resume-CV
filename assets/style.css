@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 :root {
-  --color: rgb(0, 197, 138);
+  --color: #00c0e7;
 }
 
 *,
@@ -15,6 +15,7 @@
 
 html{
   font-size: 16px;
+  background-color: #fff;
 }
 
 .header{
@@ -23,17 +24,16 @@ html{
   grid-template-areas: "img blank profile download";
   grid-template-columns: 8.5rem 0.8rem 1fr 0.8fr;
   grid-template-rows: 6.5rem;
-}
-
-.blank{
-  background-color: var(--color);
+  box-shadow: -1px -11px 20px black;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(110,206,228,1) 47%, rgba(0,144,231,1) 84%);
 }
 
 .profile-img{
   height: 6.5rem;
 
   text-align: start;
-  background-color: var(--color);
+
 }
 
 
@@ -47,7 +47,7 @@ html{
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--color);
+
 
 }
 
@@ -59,12 +59,12 @@ html{
 
 .profile-text > h2{
   font-size: 1.2rem;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 .profile-download{
   border-radius: 0 0 5% 0;
-  background-color: var(--color);
+
   display: flex;
   text-align: center;
   align-items: center;
@@ -149,6 +149,21 @@ hr{
 }
 
 
+.contact-list{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.contact-list > li{
+  min-width: 50%;
+  margin-bottom: 0.2rem;
+}
+
+.contact-list img{
+  height: 0.83rem;
+  width: auto;
+}
+
 
 
 .part2{
@@ -166,15 +181,23 @@ hr{
 
 .content3{
   grid-area: content3;
-  text-align: end;
+  text-align: center;
 }
 
 .content3 > img{
   width: 80%;
-  height: auto;
+
   margin-bottom: -10px;
 
 }
+
+.logo-img{
+  width: 65% !important;
+
+}
+
+
+
 
 
 
@@ -190,6 +213,7 @@ hr{
 .content-flex > p{
   font-weight: 600;
   min-width: 30%;
+  margin-bottom: 0.3rem;
 }
 
 .content-flex > p > span{
@@ -205,6 +229,13 @@ progress{
   background-color: lightgray;
 }
 
+::-moz-progress-bar{
+  border-radius: 1%;
+  background-color: lightgray;
+  background-color: var(--color);
+
+}
+
 ::-webkit-progress-value{
   background-color: var(--color);
 }
@@ -213,5 +244,6 @@ progress{
 
 .h2-flex{
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
+  margin-right: 1rem;
 }
