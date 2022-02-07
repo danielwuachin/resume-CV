@@ -11,17 +11,18 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+}
+
+html{
   font-size: 16px;
 }
 
-
 .header{
-  width: 100vw;
-  height: 8.5rem;
+  height: 6.5rem;
   display: grid;
   grid-template-areas: "img blank profile download";
-  grid-template-columns: 8.5rem 0.8rem 1fr 1fr;
-  grid-template-rows: 8.5rem;
+  grid-template-columns: 8.5rem 0.8rem 1fr 0.8fr;
+  grid-template-rows: 6.5rem;
 }
 
 .blank{
@@ -29,24 +30,28 @@
 }
 
 .profile-img{
-  height: 8.5rem;
+  height: 6.5rem;
+
+  text-align: start;
+  background-color: var(--color);
 }
 
 
 .profile-img img{
   height: auto;
-  width: 8.5rem;
+  width: 6.5rem;
   border-radius: 0 0 0 5% ;
 }
 
 .profile-text{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--color);
-  padding-left: 2rem;
 
 }
 
 .profile-text > h1 {
-  margin-top: 1vh;
   font-weight: 800;
   line-height: 2.5rem;
   font-size: 2.5rem;
@@ -66,7 +71,7 @@
   justify-content: center;
 }
 
-.profile-download > h3 > a{
+a{
   color: black;
 }
 
@@ -81,6 +86,13 @@
 hr{
   border: 1px solid var(--color);
   color: var(--color);
+  background-color: var(--color);
+  margin-top: 0.3rem;
+}
+
+.hr{
+  width: 132%;
+
 }
 
 .material-icons{
@@ -89,11 +101,12 @@ hr{
 }
 
 .part1{
-  margin-top: 2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
   display: grid;
   grid-template-areas: 
   "blank1 content1 content2 blank2";
-  grid-template-columns: 0.5rem 8.8rem 1fr 0.5rem;
+  grid-template-columns: 0.5rem 6.8rem 1fr 0.7rem;
 }
 
 .content1{
@@ -103,7 +116,6 @@ hr{
 .content1 > h2{
   text-align: right;
   font-size: 1rem;
-  text-decoration: underline;
   margin-right: 0.9rem;
 }
 
@@ -111,6 +123,15 @@ hr{
 .content2{
   margin-left: 2rem;
   grid-area: content2;
+}
+
+
+.content2 h2{
+  font-size: 0.9rem;
+}
+
+.content2 h4{
+  font-size: 0.6rem;
 }
 
 .content2 > ul li{
@@ -125,4 +146,72 @@ hr{
 
 .content2 p {
   font-size: 0.8rem;
+}
+
+
+
+
+.part2{
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-areas: 
+  "blank1 content1 content2 content3 blank2";
+  grid-template-columns: 0.5rem 6.8rem 1fr 0.3fr 0.7rem;
+  grid-template-rows: 67.4px;
+}
+
+.item{
+  margin-top: 0.6rem;
+}
+
+.content3{
+  grid-area: content3;
+  text-align: end;
+}
+
+.content3 > img{
+  width: 80%;
+  height: auto;
+  margin-bottom: -10px;
+
+}
+
+
+
+
+.content-flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.content-flex > p{
+  font-weight: 600;
+  min-width: 30%;
+}
+
+.content-flex > p > span{
+  color: var(--color);
+}
+
+
+progress{
+  -webkit-appearance: none;
+}
+::-webkit-progress-bar {
+  border-radius: 1%;
+  background-color: lightgray;
+}
+
+::-webkit-progress-value{
+  background-color: var(--color);
+}
+
+
+
+.h2-flex{
+  text-align: center;
+  margin-bottom: 1rem;
 }
