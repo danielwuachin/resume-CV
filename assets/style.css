@@ -18,6 +18,12 @@ html{
   background-color: #fff;
 }
 
+a{
+
+  color: black;
+}
+
+
 .header{
   height: 6.5rem;
   display: grid;
@@ -64,21 +70,23 @@ html{
 
 .profile-download{
   border-radius: 0 0 5% 0;
-
   display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .profile-download a {
-  font-size: 1rem;
-  line-height: 2rem;
+  box-shadow: 0px 0px 3.5px 0px darkslateblue;
+  border-radius: 5px;
+  padding: 0.8rem 1.2rem;
+  background-color: var(--color);
+  font-size: 0.8rem;
+  line-height: 0;
+  text-decoration: none;
 }
 
-a{
-  color: black;
-}
 
 
 
